@@ -102,6 +102,13 @@ img {
 .address .link:not(:last-child) {
   margin-right: 50px;
 }
+.address .link-icon {
+  width: 16px;
+  height: 11px;
+}
+.address .link-icon:hover {
+  color: var(--accent-color);
+}
 /*Hero*/
 .hero {
   max-width: 1600px;
@@ -237,22 +244,31 @@ img {
 }
 .team-list .text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
+.social-network {
+  display: flex;
+  justify-content: space-around;
+}
 .socials {
-  display: block;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  <circle r="260"/>
 }
-.socials .link-item {
-  width: 10px;
-  height: 20px;
-  fill: darkblue;
+.socials-item {
+  fill: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
-.socials:hover,
-.socials:focus {
-  color: var(--accent-color);
+
+.socials-item:hover,
+.socials-item:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /*Clients*/
@@ -270,6 +286,17 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   margin: 15px;
+}
+.clients-list .item:hover,
+.clients-list .item:focus{
+  border: 1px solid var(--accent-color);
+}
+.clients-logo{
+  fill: #AFB1B8;
+}
+.clients-logo:hover,
+.clients-logo:focus{
+fill: var(--accent-color);
 }
 /*Footer*/
 footer {
