@@ -246,6 +246,9 @@ img {
 .socials:focus {
   color: var(--accent-color);
 }
+.link-icon {
+  background-color: brown;
+}
 /*Clients*/
 .clients-list {
   display: flex;
